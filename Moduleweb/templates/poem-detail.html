@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài thơ số {{index + 1}}</h1>
+    <h3>{{poem.title}}</h3>
+    <h3>{{poem.content}}</h3>
+    {%if poem.gender == "female" %}
+        <h3>By : MS. {{poem.author}}</h3>
+    {%elif poem.gender == "male" %}   
+        <h3>By: MR. {{poem.author}}</h3>
+    {%endif%}    
+    
+</body>
+</html>

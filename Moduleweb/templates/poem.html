@@ -9,9 +9,8 @@
 <body>
    
    {% for poem in poems %}
-        
-        <h1>Bài thơ số {{loop.index}}</h1>
-        <h3>{{poem.title}}</h3>
+   <a href="/poem/{{ loop.index0 }}"><h1>Bài thơ số {{loop.index}}</h1></a>
+   <h3>{{poem.title}}</h3>
         <p>{{poem.content}}</p>
         {%if poem.gender == "female" %}
             <h5>By: MS. {{poem.author}}</h5>
