@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <b>List all rivers in South America continent with length less than 1000 km</b> <br>
+    {% for lengths in all_america %}
+    {% if lengths.length < 1000 %}
+      <b>Name</b> {{lengths.name}} <br>
+      <b>Continent</b> {{lengths.continent}} <br>
+      <b>Length</b> {{lengths.length}} <br>
+      <hr>
+    {%endif%}
+    {% endfor %}
+    
+</body>
+</html>

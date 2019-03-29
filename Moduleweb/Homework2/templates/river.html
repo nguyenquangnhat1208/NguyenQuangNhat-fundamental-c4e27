@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List ALL rivers in Africa</title>
+</head>
+<body>
+    <b>List all rivers in Africa</b> <br>
+    {% for rivers in all_river %}
+    {% if rivers.continent == "Africa" %}
+      <b>Name</b> {{rivers.name}} <br>
+      <b>Continent</b> {{rivers.continent}} <br>
+      <b>Length</b> {{rivers.length}} <br>
+      <hr>
+    {%endif%}
+    {% endfor %}
+    
+</body>
+</html>
